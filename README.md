@@ -1,5 +1,5 @@
-in package.json
 
+# Install
 add in dependency section of package.json
 
 ```
@@ -20,4 +20,14 @@ add in script section of package.json
     "postinstall": "patch-package --patch-dir=node_modules/dark-sails"
     }
 }
+```
+
+# Problems
+
+1. postinstall not runned
+
+Try run this command in terminal
+
+```
+    npm config set unsafe-perm true
 ```
