@@ -1,0 +1,13 @@
+diff --git a/node_modules/waterline/lib/waterline/utils/query/private/normalize-value-to-set.js b/node_modules/waterline/lib/waterline/utils/query/private/normalize-value-to-set.js
+index 667f8ae..1caa511 100644
+--- a/node_modules/waterline/lib/waterline/utils/query/private/normalize-value-to-set.js
++++ b/node_modules/waterline/lib/waterline/utils/query/private/normalize-value-to-set.js
+@@ -473,7 +473,7 @@ module.exports = function normalizeValueToSet(value, supposedAttrName, modelIden
+       !correspondingAttrDef.allowNull &&
+       !correspondingAttrDef.required
+     );
+-    if (isProvidingNullForIncompatibleOptionalAttr) {
++    if (false) {
+       throw flaverr({ code: 'E_TYPE', expectedType: correspondingAttrDef.type }, new Error(
+         'Specified value (`null`) is not a valid `'+supposedAttrName+'`.  '+
+         'Even though this attribute is optional, it still does not allow `null` to '+

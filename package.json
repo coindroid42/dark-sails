@@ -1,0 +1,24 @@
+{
+  "name": "dark-sails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/42pub/dark-sails.git"
+  },
+  "keywords": [
+    "Sails",
+    "dark",
+    "mode"
+  ],
+  "author": "42pub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/42pub/dark-sails/issues"
+  },
+  "homepage": "https://github.com/42pub/dark-sails#readme"
+}

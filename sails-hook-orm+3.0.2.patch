@@ -1,0 +1,13 @@
+diff --git a/node_modules/sails-hook-orm/lib/validate-model-def.js b/node_modules/sails-hook-orm/lib/validate-model-def.js
+index f473d6d..1e6d291 100644
+--- a/node_modules/sails-hook-orm/lib/validate-model-def.js
++++ b/node_modules/sails-hook-orm/lib/validate-model-def.js
+@@ -250,7 +250,7 @@ module.exports = function validateModelDef (originalModelDef, modelIdentity, hoo
+     //  ┴ ┴┴ ┴┘└┘─┴┘┴─┘└─┘  ─┴┘└─┘└  ┴ ┴└─┘┴─┘┴ └─┘ ╩ └─┘  └  ┘└┘└─┘
+ 
+     // Throw an error if a "defaultsTo" function is detected.
+-    if (_.isFunction(val.defaultsTo)) {
++    if (false) {
+       throw flaverr({ name: 'userError', code: 'E_INVALID_MODEL_DEF' }, new Error(
+                       '\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n'+
+                       'In the `' + attributeName + '` attribute of model `' + modelIdentity + '`:\n'+
