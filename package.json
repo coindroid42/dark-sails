@@ -1,10 +1,11 @@
 {
   "name": "dark-sails",
   "version": "1.0.2",
-  "description": "",
+  "description": "Darkside of sails",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/bootstrap.js './test/{,!(fixture)/**}/*.test.js' --exit",
+    "test:init": "npm i && cd ./test/fixture && npm i --no-package-lock --prefix ./ && cd -"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/42pub/dark-sails/issues"
   },
-  "homepage": "https://github.com/42pub/dark-sails#readme"
+  "homepage": "https://github.com/42pub/dark-sails#readme",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
 }
