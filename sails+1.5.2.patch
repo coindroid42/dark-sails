@@ -7,7 +7,7 @@ index aae04a6..5e87ca9 100644
    includeAll.optional({
      dirname: sails.config.paths.controllers,
 -    filter: /(^[^.]+\.(?:(?!md|txt).)+$)/,
-+    filter: /(^[^.]+\.(?:(?!|ts).)+$)/,
++    filter: /(^[^.]+\.(?:(?!md|txt|ts).)+$)/,
      flatten: true,
      keepDirectoryPath: true
    }, function(err, files) {
@@ -51,7 +51,7 @@ index c3e1430..4373884 100644
        includeAll.optional({
          dirname: sails.config.paths.policies,
 -        filter: /^(.+)\.(?:(?!md|txt).)+$/,
-+        filter: /^(.+)\.(?:(?!|ts).)+$/,
++        filter: /^(.+)\.(?:(?!md|txt|ts).)+$/,
          replaceExpr: null,
          flatten: true,
          keepDirectoryPath: true
